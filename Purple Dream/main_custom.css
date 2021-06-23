@@ -1,0 +1,162 @@
+/* Made by: RisDN | Ris#2928 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+:root {
+    --fontcolor: #fbd6fb
+}
+
+body,
+* {
+    font-family: 'Lacquer', cursive;
+}
+
+.menuItem {
+    font-size: 28px;
+    background: rgb(161 7 249 / 11%);
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff;
+    margin: 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 25px;
+    color: var(--fontcolor)!important;
+    text-shadow: -1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020!important;
+}
+
+.button {
+    background-color: #aa02ff !important;
+    color: var(--fontcolor);
+    box-shadow: inset 0 -7px 0 0 #aa02ff!important;
+}
+
+#chatList,
+#chatInputHolder,
+#termsInfo,
+#headerRight,
+#signedOutHeaderBar,
+#signedInHeaderBar,
+#menuWindow,
+.menuClassLevelBox,
+.setHed,
+.serverHeader,
+#selectorContainer,
+#selectorContainer,
+.skinCard,
+.blackShad,
+.classCard,
+#itemSearchH,
+#tlInfHold,
+#leaderDisplay,
+#reloadMsg,
+#bottomLeftHolder,
+#ammoDisplay,
+#speedRunHolder,
+#spectateInfo,
+#timerDisplay,
+#endTabbedView,
+#endUI,
+#scoreZoneCount,
+#livesCount,
+#killCount,
+#deathCount,
+#streakCount,
+#kdCount,
+#scoreCount,
+#killFeed,
+.settingsHeader {
+    background: rgb(161 7 249 / 11%) !important;
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
+}
+
+#reloadMsg,
+#bottomLeftHolder {
+    border-radius: 25px;
+}
+
+#mLevelCont {
+    background: rgb(161 7 249 / 20%) !important;
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
+}
+
+#signedOutHeaderBar,
+#signedInHeaderBar {
+    border-radius: 15px;
+}
+
+
+/* Hide */
+
+#gameNameHolder,
+#seasonLabel,
+#voiceDisplay,
+#ot-sdk-btn-floating.ot-floating-button,
+#braveWarning,
+#ot-sdk-btn-floating .ot-floating-button__front,
+#ot-sdk-btn-floating .ot-floating-button__back,
+#newsHolder,
+#faceItIconM {
+    display: none;
+}
+
+#customizeButton,
+.button,
+#mapInfo,
+.menuItemTitle {
+    color: var(--fontcolor) !important;
+}
+
+#menuBtnHost,
+#menuBtnBrowser,
+#menuBtnRanked,
+#menuBtnRanked,
+#menuBtnJoin,
+#inviteButton {
+    font-size: 35px !important;
+}
+
+#instructions {
+    font-size: 38px;
+}
+
+#spectButton {
+    margin-top: 19%
+}
+
+#spectButton::after {
+    content: 'CSS by: RisDN';
+    margin-left: 25px;
+    color: var(--fontcolor)
+}
+
+#customizeButton {
+    font-size: 33px;
+}
+
+.menuClassLevelBox,
+.menuClassPlayerName,
+.menuClassPlayerClan {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.menuClassLevelBox {
+    border-radius: 15px;
+}
+
+#menuClassName,
+#menuClassSubtext {
+    font-size: 25px;
+    padding: 2px;
+}
+
+#spectButton span {
+    color: var(--fontcolor)!important
+}
+
+#menuFPS,
+#menuPingText {
+    font-size: 25px;
+}
+
+#menuRegionLabel {
+    font-size: 20px;
+}
