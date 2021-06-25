@@ -1,23 +1,5 @@
 /* Made by: RisDN | Ris#2928 */
 
-
-/*
-Changelog 1 2021.06.24
-
-MENUS
-
-- Fixed some positioning bug
-- Created style for KPD window
-- Created style for Login window
-- Fixed challenges button (small text)
-- Code optimalization
-- Profile page fixed (small text)
-- Created style for menuClassPlayerName and menuClassPlayerClan
-- Added selected gun's color
-- Added button colors to most of the menus
-- Fixed purple theme in challanges window
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 :root {
     --fontcolor: #fbd6fb
@@ -26,6 +8,7 @@ MENUS
 body,
 * {
     font-family: 'Lacquer', cursive;
+    font-weight: bold;
 }
 
 .menuItem {
@@ -54,7 +37,13 @@ body,
 .subPassChg,
 .quickJoin,
 #hostMenuBtn,
-.redVouchBtn {
+.redVouchBtn,
+.settingsBtn,
+.advancedToggle,
+input:checked+.optCheck,
+.hostToggle,
+.hostPresetBtn,
+.hostCBtn {
     /* Buttons */
     background-color: #aa02ff !important;
     color: var(--fontcolor);
@@ -99,7 +88,9 @@ body,
 #scoreCount,
 #killFeed,
 .settingsHeader,
-#policePopC {
+#policePopC,
+#instructionsUpdate,
+#matchVoteHolder {
     background: rgb(161 7 249 / 11%) !important;
     box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
 }
@@ -109,14 +100,39 @@ body,
 }
 
 #reloadMsg,
-#bottomLeftHolder {
+#bottomLeftHolder,
+.blackShad {
     border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(161 7 249 / 11%) !important;
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
 }
 
 #mLevelCont,
 #referralHeader,
-.setHedS {
+.setHedS,
+.hostHeader {
     background: rgb(161 7 249 / 20%) !important;
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
+}
+
+.sliderSml,
+.slider,
+.inputGrey2,
+.sliderM,
+#settSearch,
+#rawMapData,
+#presetName,
+#presetSelect {
+    background: rgb(215 167 243 / 75%) !important;
+    box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
+}
+
+input:checked+.sliderSml,
+input:checked+.slider {
+    background: rgb(124 5 191 / 75%) !important;
     box-shadow: inset 60px 0 120px #ffffff-60px 0 120px #ffffff !important;
 }
 
@@ -137,7 +153,7 @@ body,
 #ot-sdk-btn-floating .ot-floating-button__back,
 #newsHolder,
 #faceItIconM {
-    display: none;
+    display: none !important;
 }
 
 #menuBtnHost,
@@ -153,6 +169,10 @@ body,
     font-size: 38px;
 }
 
+.optName {
+    font-size: 22px;
+}
+
 #spectButton {
     margin-top: 19%
 }
@@ -163,7 +183,8 @@ body,
     color: var(--fontcolor)
 }
 
-#customizeButton {
+#customizeButton,
+#instructionsUpdate {
     font-size: 33px;
 }
 
@@ -199,8 +220,27 @@ body,
 .button,
 #mapInfo,
 .menuItemTitle,
-#policePopC div {
-    color: var(--fontcolor)!important
+#policePopC div,
+.settingTab,
+.serverHostOpH,
+.serverHostOp,
+.menuClassPlayerName,
+#menuAccountUsername,
+.matchVoteMap,
+.matchVoteMode,
+.matchVoteTotal,
+.hostHeader,
+#rawMapData::placeholder,
+.blackShad,
+.optName,
+.setHed,
+#presetName,
+#presetName::placeholder {
+    color: var(--fontcolor)!important;
+}
+
+.blackShad {
+    font-size: 16px;
 }
 
 #menuFPS,
